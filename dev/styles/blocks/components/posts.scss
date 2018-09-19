@@ -1,0 +1,49 @@
+.post-item {
+  overflow: hidden;
+  margin-bottom: 30px;
+  &__img {
+    float: left;
+    margin-right: 30px;
+    overflow: hidden;
+    max-width: 165px;
+    @include border-radius(5px);
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__description {
+    overflow: hidden;
+  }
+  &__title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color: #292e34;
+    margin: 0 0 5px;
+  }
+  &__link {
+    color: #292e34;
+    &:hover {
+      color: #292e34;
+    }
+  }
+  &__date {
+    font-size: 13px;
+    color: #74797f;
+    margin: 0 0 5px;
+  }
+  &__text {
+    font-size: 15px;
+    color: #292e34;
+  }
+  @media screen and (max-width: $mobile) {
+    &__img {
+      float: none;
+      margin-right: 0;
+      margin-bottom: 15px;
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.btn {
+  border: 2px solid transparent;
+  padding: 8px 22px;
+  border-radius: 35px;
+  font-size: 14px;
+  color: #292e34;
+  i {
+    margin-right: 5px;
+  }
+  &.btn-white {
+    border-color: #22d498;
+    background: #fff;
+    font-size: 13px;
+    color: #23d497;
+    &:hover {
+      background: #22d498;
+      color: #fff;
+    }
+  }
+  &.btn-green {
+    border-color: #eef6f9;
+    background: #23d497;
+    font-size: 13px;
+    font-weight: bold;
+    color: #eef6f9;
+    &:hover {
+      background: #1dd09f;
+    }
+  }
+  &.btn-more {
+    background: #eef6f9;
+    padding: 12px 35px;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(41,46,52,0.08);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(41,46,52,0.08);
+    box-shadow: 0px 3px 7px 0px rgba(41,46,52,0.08);
+    i {
+      margin-right: 0;
+      margin-left: 3px;
+    }
+    &:hover {
+      color: #eef6f9;
+      background: #0dc7b0;
+      background: -moz-linear-gradient(-45deg, #0dc7b0 0%, #10c8b0 25%, #10c8ac 33%, #19cea5 78%, #1cd19e 100%);
+      background: -webkit-linear-gradient(-45deg, #0dc7b0 0%,#10c8b0 25%,#10c8ac 33%,#19cea5 78%,#1cd19e 100%);
+      background: linear-gradient(135deg, #0dc7b0 0%,#10c8b0 25%,#10c8ac 33%,#19cea5 78%,#1cd19e 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc7b0', endColorstr='#1cd19e',GradientType=1 );
+    }
+  }
+  &.btn-fixed-width {
+    background: #eef6f9;
+    width: 130px;
+    padding-left: 8px;
+    padding-right: 8px;
+    &:hover {
+      color: #eef6f9;
+      -webkit-box-shadow: 0px 4px 14px 0px rgba(254,122,86,0.35);
+      -moz-box-shadow: 0px 4px 14px 0px rgba(254,122,86,0.35);
+      box-shadow: 0px 4px 14px 0px rgba(254,122,86,0.35);
+      background: #ff8252;
+      background: -moz-linear-gradient(-45deg, #ff8252 0%, #fe7f52 100%);
+      background: -webkit-linear-gradient(-45deg, #ff8252 0%,#fe7f52 100%);
+      background: linear-gradient(135deg, #ff8252 0%,#fe7f52 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8252', endColorstr='#fe7f52',GradientType=1 );
+    }
+  }
+}

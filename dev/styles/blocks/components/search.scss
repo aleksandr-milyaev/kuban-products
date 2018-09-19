@@ -1,0 +1,34 @@
+.search {
+  background: #eef6f9;
+  padding: 2px;
+  width: 360px;
+  position: relative;
+  @include border-radius(5px);
+  &__input {
+    border: 1px solid transparent;
+    background: transparent;
+    width: 100%;
+    height: 46px;
+    padding: 0 95px 0 20px;
+    font-size: 13px;
+    color: #bac1c4;
+  }
+  &__btn {
+    border: 1px solid transparent;
+    background: #fe8153;
+    width: 87px;
+    height: 42px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #eef6f9;
+    @include vertical-center;
+    right: 2px;
+    @include border-radius(5px);
+    &:hover {
+      background: #f96531;
+    }
+  }
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+  }
+}

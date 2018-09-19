@@ -1,0 +1,46 @@
+@mixin ff($fontName, $fileName) {
+	@font-face {
+		font-family: "#{$fontName}";
+		src: url("../fonts/#{$fileName}.woff") format("woff"),
+			url("../fonts/#{$fileName}.woff2") format("woff2");
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&::-moz-placeholder {opacity: 1; @content}
+	&:-ms-input-placeholder {@content}
+	&.placeholder {@content}
+}
+
+@mixin translate($x, $y) {
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	-o-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
+
+@mixin vertical-center {
+	position: absolute;
+	top: 50%;
+	@include translate(0, -50%);
+}
+@mixin horizontal-center {
+	position: absolute;
+	left: 50%;
+	@include translate(-50%, 0);
+}
+@mixin horizontal-left {
+	position: absolute;
+	left: 0;
+	@include translate(0, 0);
+}
+
+@mixin element-after {
+	display: block;
+	content: '';
+}
+

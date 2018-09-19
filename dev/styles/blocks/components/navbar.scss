@@ -1,0 +1,49 @@
+.navbar {
+  padding: 2px 0;
+  &-toggler:focus {
+    outline-color: #22d498;
+  }
+  .navbar-nav {
+    .nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 14px;
+      color: #292e34;
+      &:hover {
+        background: #fe7259;
+        color: #eef6f9;
+      }
+    }
+    .active .nav-link {
+      background: #fe7259;
+      color: #eef6f9;
+    }
+  }
+  &__btns {
+    order: 2;
+  }
+  .btn {
+    margin-left: 5px;
+  }
+  @media screen and (max-width: $large-desktop) {
+    .navbar-nav {
+      .nav-link {
+        font-size: 12px;
+      }
+    }
+  }
+  @media screen and (max-width: $desktop) {
+    &__btns {
+      order: 0;
+    }
+  }
+  @media screen and (max-width: $mobile) {
+    .btn {
+      padding: 5px 12px;
+    }
+  }
+}

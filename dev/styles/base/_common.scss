@@ -1,0 +1,158 @@
+body {
+	min-width: 320px;
+	font: 15px/1.2 'Open Sans', sans-serif;
+	color: #292e34;
+}
+
+button,
+[type=reset],
+[type=submit],
+[type=image],
+a {
+	-webkit-transition: background-color .2s, color .2s;
+	transition: background-color .2s, color .2s;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+%list-reset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+%clearfix {
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+
+.container {
+	@media screen and (min-width: $large-desktop) {
+		max-width: 1170px;
+	}
+}
+.logo {
+	display: block;
+	background: url("../img/logo.png") 0 0 no-repeat;
+	width: 358px;
+	height: 87px;
+	text-indent: -9999px;
+	a {
+		display: block;
+		height: 100%;
+	}
+	@media screen and (max-width: $desktop) {
+		width: 285px;
+		height: 67px;
+		background-size: cover;
+	}
+	@media screen and (max-width: $tablet) {
+		margin: 0 auto 10px;
+	}
+}
+.logo2 {
+	@extend .logo;
+	background: url("../img/logo2.png") 0 0 no-repeat;
+	width: 255px;
+	height: 69px;
+}
+
+
+.title {
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	font-size: 36px;
+	color: #292e34;
+	text-align: center;
+	padding-bottom: 26px;
+	position: relative;
+	margin: 0 0 35px;
+	&:after {
+		background: url("../img/bg/bg-title.png") 0 0 no-repeat;
+		bottom: 0;
+		width: 78px;
+		height: 12px;
+		@include element-after();
+		@include horizontal-center();
+	}
+	&.align-left {
+		text-align: left;
+		&:after {
+			@include horizontal-left();
+		}
+	}
+	&.title-small {
+		font-size: 14px;
+		padding-bottom: 20px;
+		margin-bottom: 12px;
+	}
+	&.title-uppercase {
+		text-transform: uppercase;
+	}
+}
+
+.catalog-more {
+	text-align: center;
+	&__link {
+		font-size: 16px;
+		color: #1dd19f;
+		position: relative;
+		padding-bottom: 5px;
+		&:after {
+			@include element-after();
+			@include horizontal-center();
+			background: #9ae7d5;
+			width: 100%;
+			height: 1px;
+		}
+		&:hover {
+			color: #1dd19f;
+			text-decoration: none;
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.rating {
+	display: flex;
+	padding: 0;
+	margin: 0 0 12px;
+	list-style: none;
+	&__item {
+		margin-right: 5px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		font-size: 13px;
+		color: #f8ba24;
+		&:hover {
+			color: #d89e10;
+		}
+	}
+}

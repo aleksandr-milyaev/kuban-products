@@ -1,0 +1,20 @@
+.page-section {
+  padding: 50px 0 85px;
+}
+.section-suppliers {
+  @extend .page-section;
+  background: #eef6f9;
+}
+
+.section-reviews {
+  @extend .page-section;
+  background: #eef6f9;
+}
+
+.section-post {
+  @extend .page-section;
+  background: url("../img/bg/bg1.jpg") center 0 no-repeat;
+  background-size: cover;
+  padding-bottom: 45px;
+  position: relative;
+}

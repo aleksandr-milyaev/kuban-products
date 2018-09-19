@@ -1,0 +1,35 @@
+.service-item {
+  overflow: hidden;
+  margin-bottom: 35px;
+  &__img {
+    float: left;
+    margin-right: 17px;
+    width: 52px;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+  &__description {
+    padding-top: 7px;
+    overflow: hidden;
+  }
+  &__title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    color: #292e34;
+    margin: 0 0 2px;
+  }
+  &__link {
+    font-size: 14px;
+    color: #12c9ab;
+    text-decoration: underline;
+    &:hover {
+      color: #12c9ab;
+      text-decoration: none;
+    }
+  }
+}

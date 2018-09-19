@@ -1,0 +1,82 @@
+.catalog-list {
+  margin-bottom: 85px;
+  &__item {
+    margin-bottom: 30px;
+  }
+}
+.catalog-item {
+  border: 2px solid #eef6f9;
+  background: #fff;
+  height: 100%;
+  padding: 27px 15px 35px;
+  font-size: 15px;
+  color: #292e34;
+  text-align: center;
+  @include border-radius(7px);
+  -webkit-box-shadow: 0px 3px 7px 0px rgba(41,46,52,0.08);
+  -moz-box-shadow: 0px 3px 7px 0px rgba(41,46,52,0.08);
+  box-shadow: 0px 3px 7px 0px rgba(41,46,52,0.08);
+  &__title {
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    color: #292e34;
+    height: 42px;
+    overflow: hidden;
+  }
+  &__link {
+    color: #292e34;
+    text-decoration: none;
+    &:hover {
+      color: #292e34;
+      text-decoration: none;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    padding: 15px;
+    @include border-radius(100%);
+    background: #fea386;
+    background: -moz-linear-gradient(-45deg, #fea386 0%, #fd7d56 1%, #fe7d53 1%, #ff7b58 3%, #fd7c54 4%, #fd7c54 16%, #fe7956 20%, #fe7457 61%, #fe705a 85%, #fe725b 97%, #ff6e5b 98%, #fd6f5b 99%, #fe9b88 100%);
+    background: -webkit-linear-gradient(-45deg, #fea386 0%,#fd7d56 1%,#fe7d53 1%,#ff7b58 3%,#fd7c54 4%,#fd7c54 16%,#fe7956 20%,#fe7457 61%,#fe705a 85%,#fe725b 97%,#ff6e5b 98%,#fd6f5b 99%,#fe9b88 100%);
+    background: linear-gradient(135deg, #fea386 0%,#fd7d56 1%,#fe7d53 1%,#ff7b58 3%,#fd7c54 4%,#fd7c54 16%,#fe7956 20%,#fe7457 61%,#fe705a 85%,#fe725b 97%,#ff6e5b 98%,#fd6f5b 99%,#fe9b88 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fea386', endColorstr='#fe9b88',GradientType=1 );
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__text {
+    margin: 0 0 20px;
+  }
+  &:hover {
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(41,46,52,0.1);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(41,46,52,0.1);
+    box-shadow: 0px 0px 30px 0px rgba(41,46,52,0.1);
+    .catalog-item__title {
+      color: #1dd19f;
+    }
+    .catalog-item__link {
+      color: #1dd19f;
+    }
+    .catalog-item__img {
+      -webkit-box-shadow: 0px 4px 14px 0px rgba(254,122,86,0.35);
+      -moz-box-shadow: 0px 4px 14px 0px rgba(254,122,86,0.35);
+      box-shadow: 0px 4px 14px 0px rgba(254,122,86,0.35);
+    }
+    .btn-more {
+      color: #eef6f9;
+      background: #0dc7b0;
+      background: -moz-linear-gradient(-45deg, #0dc7b0 0%, #10c8b0 25%, #10c8ac 33%, #19cea5 78%, #1cd19e 100%);
+      background: -webkit-linear-gradient(-45deg, #0dc7b0 0%,#10c8b0 25%,#10c8ac 33%,#19cea5 78%,#1cd19e 100%);
+      background: linear-gradient(135deg, #0dc7b0 0%,#10c8b0 25%,#10c8ac 33%,#19cea5 78%,#1cd19e 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc7b0', endColorstr='#1cd19e',GradientType=1 );
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.socials {
+  &__title {
+    font-size: 15px;
+    color: #222222;
+    margin-bottom: 7px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    background: #a7a39e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    margin-right: 4px;
+    @include border-radius(7px);
+    &:last-child {
+      margin-right: 0;
+    }
+    i {
+      font-size: 13px;
+      color: #fff;
+    }
+    &:hover {
+      background: #1dd19f;
+      text-decoration: none;
+    }
+  }
+}

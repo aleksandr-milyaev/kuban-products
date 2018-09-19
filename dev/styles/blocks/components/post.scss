@@ -1,0 +1,32 @@
+.post {
+  color: #edf5f8;
+  font-size: 16px;
+  line-height: 25px;
+  padding-right: 285px;
+  &__text {
+    position: relative;
+    z-index: 10;
+  }
+  h1 {
+    @extend .title;
+    color: #fff;
+    text-align: left;
+    &:after {
+      @include horizontal-left();
+    }
+  }
+  p {
+    margin: 0 0 25px;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+  }
+  @media screen and (max-width: $large-desktop) {
+    padding-right: 0;
+    img {
+      display: none;
+    }
+  }
+}

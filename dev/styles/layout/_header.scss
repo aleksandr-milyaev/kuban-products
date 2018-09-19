@@ -1,0 +1,33 @@
+.header {
+  padding: 18px 0 15px;
+  background: #0dc7b0;
+  background: -moz-linear-gradient(-45deg, #0dc7b0 0%, #0ec8b0 18%, #0fc7ad 18%, #14ccaa 26%, #13cba9 27%, #15caa7 27%, #17cda7 28%, #16cca4 30%, #1cd0a0 39%, #1ed09e 39%, #1dd29f 40%, #1ed09c 40%, #20d39c 43%, #20d19a 43%, #22d49a 47%, #21d397 48%, #24d496 50%, #24d496 100%);
+  background: -webkit-linear-gradient(-45deg, #0dc7b0 0%,#0ec8b0 18%,#0fc7ad 18%,#14ccaa 26%,#13cba9 27%,#15caa7 27%,#17cda7 28%,#16cca4 30%,#1cd0a0 39%,#1ed09e 39%,#1dd29f 40%,#1ed09c 40%,#20d39c 43%,#20d19a 43%,#22d49a 47%,#21d397 48%,#24d496 50%,#24d496 100%);
+  background: linear-gradient(135deg, #0dc7b0 0%,#0ec8b0 18%,#0fc7ad 18%,#14ccaa 26%,#13cba9 27%,#15caa7 27%,#17cda7 28%,#16cca4 30%,#1cd0a0 39%,#1ed09e 39%,#1dd29f 40%,#1ed09c 40%,#20d39c 43%,#20d19a 43%,#22d49a 47%,#21d397 48%,#24d496 50%,#24d496 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dc7b0', endColorstr='#24d496',GradientType=1 );
+  &__holder {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+  &__column {
+    margin-left: 55px;
+  }
+  @media screen and (max-width: $large-desktop) {
+    &__holder {
+      flex-wrap: wrap;
+    }
+    &__column {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: $desktop) {
+    &__column {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+}
